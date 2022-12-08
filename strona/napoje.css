@@ -1,0 +1,121 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Arial;
+}
+.banner{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(napoje_slodzone2a.jpg);
+background-size: cover;
+background-position: center;
+}
+.navbar{
+width: 90%;
+margin: auto;
+padding: 25px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.logo{
+width: 100;
+cursor: pointer;
+}
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 5px;
+position: relative;
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: #ffd000;
+text-transform: uppercase;
+}
+.navbar ul li::after{
+content: '';
+height: 5px;
+width: 0;
+background: #eead6d;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.2s;
+}
+.navbar ul li:hover::after{
+width: 100%;
+}
+.content{
+width: 100%;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+text-align: center;
+color: rgb(250, 174, 11);
+}
+.content h1{
+font-size: 125px;
+margin-top: 100px;
+top: 50px; bottom: 100px; right: px; left: 1450px;
+}
+.content p{
+margin: -150px auto;
+font-weight: 500;
+line-height: 400px;
+}
+button{
+width: 175px;
+padding: 20px 0;
+text-align: center;
+margin: 20px 10px;
+border-radius: 25px;
+font-weight: bold;
+border: 2px solid #ffd000;
+background: transparent;
+color: #fff;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+
+span{
+background: #ffb731;
+height: 100%;
+width: 0;
+border-radius: 30px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+button:hover span{
+width: 100%;
+}
+button:hover{
+border: none;
+}
+.orangebutton{
+    width: 200px;
+    height: -50px;
+    font-size: 20px;
+    color: rgb(70, 56, 52);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 25px auto;
+    display: block;
+    background-color: white;
+    border: 3px solid rgb(5, 5, 5);
+    border-radius: 20px;
+
+    transition: bacground-color 1000ms; color: 1000ms;
+}
+.orangebutton:hover{
+    background-color: rgb(70, 56, 52);
+    color: rgb(255, 255, 255);
+    
+    transition: bacground-color 1000ms; color: 1000ms;
+}
